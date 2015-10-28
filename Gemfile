@@ -29,7 +29,7 @@ group :test, :development do
 end
 
 group :test do
-  gem 'shoulda-matchers', '3.0.0'
+  gem 'shoulda-matchers', '~> 3.0.0'
   gem 'poltergeist'
   gem 'database_cleaner'
 end

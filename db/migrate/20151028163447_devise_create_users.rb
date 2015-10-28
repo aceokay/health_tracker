@@ -34,14 +34,14 @@ class DeviseCreateUsers < ActiveRecord::Migration
       t.timestamps null: false
     end
 
-    create_table(:food) do |t|
+    create_table(:foods) do |t|
       t.column :name, :string
       t.column :calories, :integer
 
       t.timestamps
     end
 
-    create_table(:exercise) do |t|
+    create_table(:exercises) do |t|
       t.column :name, :string
       t.column :calories, :integer
 
