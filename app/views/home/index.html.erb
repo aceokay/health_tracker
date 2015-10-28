@@ -1,9 +1,16 @@
-<h1>Homepage</h1>
+<h1>Homepage (No typos allowed)</h1>
 
-<div id="calories-div">
+<div id="food-div">
   <h4>Calories Consumed</h4>
-  <%= link_to "Enter Food", new_food_path, remote: true %>
+  <p><%= link_to "Enter Food", new_food_path, class: 'btn btn-success', remote: true %></p>
 </div>
 <div id="food-form-div">
 
+</div>
+<div>
+  <ul id="food-list">
+    <% current_user.foods.each do |food| %>
+      <li><%= food.name %></li>
+    <% end %>
+  </ul>
 </div>
